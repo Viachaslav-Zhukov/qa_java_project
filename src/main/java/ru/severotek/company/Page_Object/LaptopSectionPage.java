@@ -32,9 +32,16 @@ public class LaptopSectionPage {
         driver.findElement(maxPriceInputfield).sendKeys(maxPrice);
     }
 
-    // Метод кликает для выбора поиска по производителю "Lenovo"
+    // Метод клика для выбора поиска по производителю "Lenovo"
     public void clickLaptopLenovo() {
         driver.findElement(laptopLenovo).click();
+    }
+
+    // Метод объединяющий все параметры поиска
+    public void laptopSearchByParameters(String minPrice, String maxPrice) {
+        clickLaptopLenovo();
+        setMinPrice(minPrice);
+        setMaxPrice(maxPrice);
     }
 
     // Метод возвращает полученный результат поиска для мин. цены

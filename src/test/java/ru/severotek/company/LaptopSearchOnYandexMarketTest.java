@@ -51,7 +51,7 @@ public class LaptopSearchOnYandexMarketTest {
     public void searchLaptopByModelAndPriceTest() {
         // Получение доступа к методам классов page object для взаимодействия с элементами страницы
         // Значение minPrice/maxPrice/lenovoLaptop берутся из файла настроек по аналогии с chromedriver и pageAddress
-        // Вызываем метод, активна ли кнопка каталога товаров
+        // Вызываем метод проверяем активна ли кнопка каталога товаров
         startPage.checkCatalogButton();
         // Вызываем метод клика по кнопке каталога товаров
         startPage.clickCatalogButton();
@@ -59,12 +59,8 @@ public class LaptopSearchOnYandexMarketTest {
         startPage.clickComputersSection();
         // Вызываем метод клака по разделу "Ноутбуки"
         computersCatalogPage.clickLaptopsSection();
-        // Вызываем метод клика выбора производителя Lenovo для поиска
-        laptopSectionPage.clickLaptopLenovo();
-        // Вызываем метод ввода мин. цены для поиска
-        laptopSectionPage.setMinPrice(ConfProperties.getProperty("minPrice"));
-        // Вызываем метод ввода макс. цены для поиска
-        laptopSectionPage.setMaxPrice(ConfProperties.getProperty("maxPrice"));
+        // Вызываем метод объединяющий все параметры поиска
+        laptopSectionPage.laptopSearchByParameters(ConfProperties.getProperty("minPrice"), ConfProperties.getProperty("maxPrice"));
         // Получаем отображаемую мин. цену поиска
         String priceMin = laptopSectionPage.getMinPriceInputfield();
         // Получаем отображаемую макс. цену поиска
