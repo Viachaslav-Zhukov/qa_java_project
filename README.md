@@ -8,6 +8,7 @@ qa_java_project
 Появится выпадающий список. Выбери свой аккаунт на GitHub.
 В списке репозиториев твоего аккаунта появится qa_java_project .
 4. Склонируй репозиторий на компьютер.
+
 Понадобится команда:
 git clone git@github.com:username/qa_java_project.git.
 Вместо username поставь имя твоего аккаунта на GitHub.
