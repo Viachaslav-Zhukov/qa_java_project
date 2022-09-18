@@ -21,4 +21,14 @@ git clone git@github.com:username/qa_java_project.git .
 
 Cкрипт тестирования  работает по такому алгоритму: https://docs.google.com/document/d/1itQUdtj0P2iB2w47QJK0IqYgUkjRmg2KXzRGWAhh8pw/edit
 
+Запуск автотеста
+
+Для запуска автотестов в Intellij Idea имеется несколько способов:
+
+
+Alt+Shift+F10;
+Клик правой клавишей мышки по имени тестового класса, после чего в открывшемся меню выбрать Run;
+
+Результат выполнения автотеста отображается в консоли Idea.
+
 
