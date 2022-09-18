@@ -9,7 +9,7 @@ qa_java_project
 В списке репозиториев твоего аккаунта появится qa_java_project .
 4. Склонируй репозиторий на компьютер.
 Понадобится команда:
-'git clone git@github.com:username/qa_java_project.git'
+git clone git@github.com:username/qa_java_project.git
 Вместо username поставь имя твоего аккаунта на GitHub.
 5. Открой склонированный проект в IntelliJ IDEA. Вот так: File → Open → папка
 с проектом qa_java_project.
