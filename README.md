@@ -19,4 +19,6 @@ git clone git@github.com:username/qa_java_project.git .
 Открой склонированный проект в IntelliJ IDEA. Вот так: File → Open → папка
 с проектом qa_java_project.
 
+Cкрипт тестирования  работает по такому алгоритму: https://docs.google.com/document/d/1itQUdtj0P2iB2w47QJK0IqYgUkjRmg2KXzRGWAhh8pw/edit
+
 
